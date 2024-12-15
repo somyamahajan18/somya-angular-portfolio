@@ -205,4 +205,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+## What's Next?
+
+- [ ] Add support for multiple blog platforms
+- [ ] Integrate with other services (e.g. Twitter, GitHub, etc.)
+- [ ] Add more customization options
+- [ ] Improve accessibility
+- [ ] Add a feedback system
+
+dev version: 1.0
+
 Made with ❤️ by Javeed Ishaq
