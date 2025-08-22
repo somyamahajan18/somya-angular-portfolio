@@ -7,3 +7,9 @@
         visibility: hidden;
     }
 }
+
+.my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 7rem !important;
+}

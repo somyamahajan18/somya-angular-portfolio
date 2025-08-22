@@ -20,29 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Javeed Ishaq",
-  title: "Hi all, I'm Javeed Ishaq",
+  username: "Somya Mahajan",
+  title: "Hi all, I am Somya Mahajan",
   subTitle: emoji(
-    "A passionate Software Developer, who currently loves to build mobile apps using Flutter,with 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Django / Android Kotlin / Dart / Flutter and Firebase."
+    "Frontend Developer with 4 years of experience in Angular, TypeScript, RxJS, JavaScript, and REST API integration, building high-performance, scalable single-page applications. Proven track record in improving application performance by 20%+ via code optimization and refactoring. Strong background in component-based architecture, unit testing (Jasmine/Karma), and Agile development. Recently pursued a Master’s in Project Management to transition into technical leadership and product ownership."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1RQjZwdIptXf08-y0_EXM8lIUTKccID5l/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1Vjo5-k-0tt8aY8ZY-JG2IUXX6XaZGOnb/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/javeedishaq",
-  linkedin: "https://www.linkedin.com/in/javeed-ishaq/",
-  gmail: "ishaqjaveed1@gmail.com",
-  gitlab: "https://gitlab.com/JaveedIshaq",
-  facebook: "https://web.facebook.com/javeedishaq",
-  twitter: "https://twitter.com/javeedishaq",
-  medium: "https://medium.com/@javeedishaq",
-  stackoverflow: "https://stackoverflow.com/users/4778545/javeed-ishaq",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  github: "https://github.com/somyamahajan18",
+  linkedin: "https://linkedin.com/in/somya-mahajan-84b66916a",
+  gmail: "somyamahajan18@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -62,6 +55,30 @@ https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
   {
+    skillName: "Angular",
+    fontAwesomeClassname: "Angular-icon"
+  },
+  {
+    skillName: "Java",
+    fontAwesomeClassname: "fab fa-java"
+  },
+  {
+    skillName: "JavaScript",
+    fontAwesomeClassname: "fab fa-js"
+  },
+  {
+    skillName: "Typescript",
+    fontAwesomeClassname: "fab fa-ts"
+  },
+   {
+    skillName: "Rxjs",
+    fontAwesomeClassname: "fab fa-rxjs"
+  },
+  {
+    skillName: "Responsive Web Design",
+    fontAwesomeClassname: "fab fa-responsive"
+  },
+  {
     skillName: "html-5",
     fontAwesomeClassname: "fab fa-html5"
   },
@@ -70,52 +87,32 @@ softwareSkills: [
     fontAwesomeClassname: "fab fa-css3-alt"
   },
   {
-    skillName: "JavaScript",
-    fontAwesomeClassname: "fab fa-js"
+    skillName: "scss",
+    fontAwesomeClassname: "fab fa-scss-alt"
   },
   {
-    skillName: "ReactJs",
-    fontAwesomeClassname: "fab fa-react"
+    skillName: "jasmine",
+    fontAwesomeClassname: "fab fa-jasmine"
   },
   {
-    skillName: "ReactJs",
-    fontAwesomeClassname: "fab fa-node"
+    skillName: "karma",
+    fontAwesomeClassname: "fab fa-karma"
   },
   {
-    skillName: "swift",
-    fontAwesomeClassname: "fab fa-swift"
+    skillName: "git",
+    fontAwesomeClassname: "fab fa-git"
   },
   {
-    skillName: "iOS",
-    fontAwesomeClassname: "fab fa-app-store-ios"
+    skillName: "data strctures and algorithms",
+    fontAwesomeClassname: "fab fa-data-structures"
   },
   {
-    skillName: "SQlite",
-    fontAwesomeClassname: "fas fa-database"
+    skillName: "oop",
+    fontAwesomeClassname: "fab fa-oop"
   },
   {
     skillName: "aws",
     fontAwesomeClassname: "fab fa-aws"
-  },
-  {
-    skillName: "firebase",
-    fontAwesomeClassname: "fas fa-fire"
-  },
-  {
-    skillName: "Kotlin",
-    fontAwesomeClassname: "fab fa-android"
-  },
-  {
-    skillName: "Java",
-    fontAwesomeClassname: "fab fa-java"
-  },
-  {
-    skillName: "Python",
-    fontAwesomeClassname: "fab fa-python"
-  },
-  {
-    skillName: "Flutter",
-    fontAwesomeClassname: "fab fa-modx"
   }
 ]
 };
@@ -126,7 +123,7 @@ const educationInfo = {
   display: false, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "The Pennsylvania State University",
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "September 2017 - April 2019",
@@ -137,7 +134,7 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "The Pennsylvania State University",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2013 - April 2017",
@@ -174,10 +171,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer (Web/Mobile Developer)",
-      company: "Eeizo IT Solution (PVT)",
+      role: "Software Engineer – Frontend Developer",
+      company: "Wabtec Corporation",
       companylogo: require("./assets/images/eeizo.png"),
-      date: "Sep 2017 – Oct 2018",
+      date: "July 2024 – Present",
       desc: "FullStack Web and Mobile Apps Developer",
       descBullets: [
         "WordPress Plugin Development and WordPress Custom Theme Development",
@@ -189,7 +186,7 @@ const workExperiences = {
     },
     {
       role: "Reactjs Nodejs Flutter Developer",
-      company: "Gtek.Solutions",
+      company: "Wabtec Corporation",
       companylogo: require("./assets/images/gtek-logo.png"),
       date: "Nov 2018 – Mar 2020",
       desc: "FullStack Web and Mobile Apps Developer",
@@ -204,7 +201,7 @@ const workExperiences = {
     },
     {
       role: "Mobile Apps Architect for Android, iOS, Flutter, Firebase",
-      company: "FlutterCasa",
+      company: "Wabtec Corporation",
       companylogo: require("./assets/images/fluttercasa.png"),
       date: "Apr 2020 – Present",
       desc: "Flutter iOS/Android Apps Developer",
@@ -382,28 +379,6 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://medium.com/@javeedishaq/dart-const-and-final-what-is-the-difference-9006ca31c961",
-      title: "Dart Const and Final, what is the Difference",
-      description: "While programming any software, there is always, needed some values to have a fixed value that can not be changed once assigned the value. Dart provides two keywords for defining constant values const and final."
-    },
-    {
-      url: "https://medium.com/@javeedishaq/how-to-convert-a-string-into-a-number-in-dart-flutter-5b2e7ca12809",
-      title: "How to convert a String into a number in Dart Flutter",
-      description: "In strongly typed Programming languages there is needed for type conversion to use a string value as a number. As a Flutter developer, my interest is in Dart to make heart Flutter :)"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
 // Talks Sections
 
 const talkSection = {
@@ -440,15 +415,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-321 7281104",
-  email_address: "ishaqjaveed1@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "javeedishaq", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  number: "+91-7814828738",
+  email_address: "somyamahajan18@gmail.com"
 };
 
 export {
@@ -463,9 +431,6 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
   talkSection,
   podcastSection,
-  contactInfo,
-  twitterDetails
-};
+  contactInfo};

@@ -1,7 +1,6 @@
 export interface BlogUser {
     name: string;
     username: string;
-    twitter_username: string | null;
     github_username: string;
     user_id: number;
     website_url: string;

@@ -1,0 +1,42 @@
+#awards {
+  position: relative;
+}
+
+.awards-swiper {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.award-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-card:hover {
+  transform: scale(1.05);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f472b6; /* pink arrows */
+}
+
+.swiper-pagination-bullet {
+  background: #f472b6;
+}
+
+/* .w-24 {
+    width: 15rem;
+}
+
+.v-24 {
+    height: 12rem;
+} */
+
+.award-card img {
+  width: 100%;
+  /* object-fit: cover; */
+}

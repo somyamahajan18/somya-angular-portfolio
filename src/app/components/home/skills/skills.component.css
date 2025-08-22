@@ -4,27 +4,21 @@
 
 .marquee-container {
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto;           /* Enable horizontal scrolling */
+    overflow-y: hidden;         /* Hide vertical scroll */
+    scroll-behavior: smooth;    /* Smooth scroll when user scrolls */
+    -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+    padding-bottom: 10px;       /* Optional: space for scrollbar */
 }
 
 .marquee-content {
     display: flex;
-    animation: marquee 30s linear infinite;
+    gap: 1rem;                  /* Space between skill cards */
+    /* Remove animation */
 }
 
-.marquee-content:hover {
-    animation-play-state: paused;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
+/* Remove hover pause animation because no auto-scroll now */
+/* .marquee-content:hover { animation-play-state: paused; } */
 
 .group:hover {
     transform: scale(1.15);
@@ -45,4 +39,9 @@
 
 .group:hover img {
     transform: scale(1.1);
+}
+
+/* Optional: hide scrollbar for cleaner look */
+.marquee-container::-webkit-scrollbar {
+    display: none;
 }

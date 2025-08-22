@@ -3,20 +3,23 @@ import { Education } from "@/core/models/education.interface";
 export const educations: Education[] = [
   {
     id: 1,
-    title: "Full-Stack Web Development with React",
-    duration: "2018",
-    institution: "Coursera - The Hong Kong University of Science and Technology",
+    title: "Masters In Project Management",
+    duration: "May 2022 - August 2025",
+    institution: "The Pennsylvania State University - USA",
+    info: "Grade - A, GPA - 4"
   },
   {
     id: 2,
-    title: "Full Stack Web and Multiplatform Mobile App Development",
-    duration: "2017",
-    institution: "Coursera - The Hong Kong University of Science and Technology",
+    title: "Graduate Certificate in Engineering Leadership and Innovation Management",
+    duration: "January 2023 - May 2024",
+    institution: "The Pennsylvania State University - USA",
+    info: "Grade - A, GPA - 4"
   },
   {
     id: 3,
-    title: "Become an Android Mobile App Developer",
-    duration: "2020",
-    institution: "Linkedin Learning - Udacity",
+    title: "Bachelor of Technology in Computer Science and Engineering",
+    duration: "August 2018 - June 2022",
+    institution: "Indira Gandhi Delhi Technical University for Women - Delhi, India",
+    info: "Percentage - 90%"
   }
 ]

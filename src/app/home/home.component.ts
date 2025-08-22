@@ -4,11 +4,10 @@ import { HeroSectionComponent } from '../components/home/hero-section/hero-secti
 import { AboutComponent } from '../components/home/about/about.component';
 import { ExperienceComponent } from '../components/home/experience/experience.component';
 import { SkillsComponent } from '../components/home/skills/skills.component';
-import { ProjectsComponent } from '../components/home/projects/projects.component';
 import { EducationComponent } from '../components/home/education/education.component';
-import { BlogComponent } from '../components/home/blog/blog.component';
 import { ContactComponent } from '../components/home/contact/contact.component';
 import { BlogService } from '@/core/services/blog.service';
+import { AwardsComponent} from '../components/home/awards/awards.component';
 
 
 @Component({
@@ -20,10 +19,9 @@ import { BlogService } from '@/core/services/blog.service';
     AboutComponent,
     ExperienceComponent,
     SkillsComponent,
-    ProjectsComponent,
     EducationComponent,
-    BlogComponent,
-    ContactComponent
+    ContactComponent,
+    AwardsComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']

@@ -10,7 +10,7 @@
     <div class="flex justify-center my-5 lg:py-8">
         <div class="flex items-center">
             <span class="w-24 h-[2px] bg-[#1a1443]"></span>
-            <span class="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+            <span class=" w-fit text-3xl font-bold text-center mb-8 text-pink-500 p-2 px-5 rounded-md">
                 Educations
             </span>
             <span class="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -19,12 +19,6 @@
 
     <div class="py-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-            <div class="flex justify-center items-start">
-                <div class="w-3/4 h-3/4">
-                    <app-animation-lottie [animationPath]="lottieFile"></app-animation-lottie>
-                </div>
-            </div>
-
             <div>
                 <div class="flex flex-col gap-6">
                     <div *ngFor="let education of educations" class="glow-card"
@@ -41,16 +35,30 @@
                                     <fa-icon [icon]="workspaceIcon" size="2x"></fa-icon>
                                 </div>
                                 <div>
-                                    <p class="text-base sm:text-xl mb-2 font-medium uppercase">
+                                    <p class="text-base sm:text-xl mb-2 font-medium ">
                                         {{education.title}}
                                     </p>
                                     <p class="text-sm sm:text-base">{{education.institution}}</p>
+                                    <p class="text-sm sm:text-base">{{education.info}}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+         <div class="flex justify-center items-start">
+                <div class="w-3/4 h-3/4">
+                    <app-animation-lottie [animationPath]="lottieFileCode"></app-animation-lottie>
+                    <br>
+                    <br>
+                
+                    <br>
+                
+                    <app-animation-lottie [animationPath]="lottieFile"></app-animation-lottie>
+                
+                </div>
+            </div>
+          
         </div>
     </div>
 </div>

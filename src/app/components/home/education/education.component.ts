@@ -16,10 +16,17 @@ export class EducationComponent implements OnInit {
   educations = educations;
   workspaceIcon = faGraduationCap;
   lottieFile: any;
+  lottieFileCode: any;
 
   async ngOnInit() {
     try {
       this.lottieFile = await fetch('assets/lottie/education.json').then(res => res.json());
+    } catch (error) {
+      console.error('Error loading Lottie animation:', error);
+    }
+
+     try {
+      this.lottieFileCode = await fetch('assets/lottie/code.json').then(res => res.json());
     } catch (error) {
       console.error('Error loading Lottie animation:', error);
     }

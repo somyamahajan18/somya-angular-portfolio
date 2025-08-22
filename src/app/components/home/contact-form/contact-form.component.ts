@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { RECAPTCHA_V3_SITE_KEY, ReCaptchaV3Service, RecaptchaV3Module } from 'ng-recaptcha';
+import { ReCaptchaV3Service, NgxCaptchaModule } from 'ngx-captcha';
 import { environment } from '../../../../environments/environment';
 import emailjs from '@emailjs/browser';
 
@@ -17,14 +17,8 @@ interface ContactForm {
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [CommonModule, FormsModule, FontAwesomeModule, RecaptchaV3Module],
-  templateUrl: './contact-form.component.html',
-  providers: [
-    {
-      provide: RECAPTCHA_V3_SITE_KEY,
-      useValue: environment.recaptcha.siteKey,
-    },
-  ],
+  imports: [CommonModule, FormsModule, FontAwesomeModule, NgxCaptchaModule],
+  templateUrl: './contact-form.component.html'
 })
 export class ContactFormComponent implements OnInit {
   mailIcon = faPaperPlane;
@@ -43,7 +37,7 @@ export class ContactFormComponent implements OnInit {
     email: false,
   };
 
-  constructor(private recaptchaV3Service: ReCaptchaV3Service) { }
+  constructor(private recaptchaV3Service: ReCaptchaV3Service) {}
 
   ngOnInit(): void {
     emailjs.init(environment.emailJs.publicKey);
@@ -71,14 +65,24 @@ export class ContactFormComponent implements OnInit {
     try {
       this.isLoading = true;
 
-      // Get reCAPTCHA token
-      const token = await this.recaptchaV3Service.execute('submit').toPromise();
+      // ✅ Execute reCAPTCHA V3 and wait for token
+      const token = await new Promise<string>((resolve, reject) => {
+        this.recaptchaV3Service.execute(
+          this.environment.recaptcha.siteKey,
+          'submit',
+          (res: string) => resolve(res),
+          undefined,
+          (err) => reject(err)
+        );
+      });
+
+      this.userInput.recaptchaToken = token;
 
       const templateParams = {
         from_name: this.userInput.name,
         from_email: this.userInput.email,
         message: this.userInput.message,
-        'g-recaptcha-response': token
+        'g-recaptcha-response': token,
       };
 
       await emailjs.send(
@@ -93,11 +97,7 @@ export class ContactFormComponent implements OnInit {
         this.statusMessage = '';
       }, 5000);
 
-      this.userInput = {
-        name: '',
-        email: '',
-        message: '',
-      };
+      this.userInput = { name: '', email: '', message: '' };
 
     } catch (error) {
       console.error('Error sending email:', error);

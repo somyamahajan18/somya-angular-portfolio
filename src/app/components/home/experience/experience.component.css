@@ -1,22 +1,31 @@
+/* Glow card container */
 .glow-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Card hover glow and lift effect */
+.glow-card:hover {
+  box-shadow: 0 0 20px rgba(106, 84, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Optional: subtle rotating gradient overlay for glow */
 .glow-card::before {
-    content: '';
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    transform: rotate(0deg);
-    transition: transform 0.5s;
-    pointer-events: none;
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+  pointer-events: none;
 }
 
 .glow-card:hover::before {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }

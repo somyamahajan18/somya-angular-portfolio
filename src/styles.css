@@ -147,3 +147,17 @@ body {
     mask-clip: padding-box, border-box;
     mask-composite: intersect;
 }
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #16f2b3;
+}
+
+.swiper-pagination-bullet {
+  background: #16f2b3;
+}

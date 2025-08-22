@@ -1,8 +1,4 @@
 export const skillsData = [
-  'Flutter',
-  'Android',
-  'Kotlin',
-  'Dart',
   'Java',
   'Spring-Boot',
   'Javascript',
@@ -19,10 +15,7 @@ export const skillsData = [
   'Bootstrap',
   'Docker',
   'Figma',
-  'Firebase',
-  'MaterialUI',
-  'Nginx',
-  'Strapi'
+  'Nginx'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
@@ -91,10 +84,6 @@ export const skillsData = [
   MySQL
   PostgreSQL
   AWS
-  Firebase
-  Blender
-  Premiere Pro
-  Adobe Audition
   Deno
   Django
   Gimp
