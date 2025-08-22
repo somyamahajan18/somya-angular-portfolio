@@ -50,7 +50,7 @@ const skillsSection = {
     emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
+  /* Make Sure to include correct Font Awesome Cla..ssname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
