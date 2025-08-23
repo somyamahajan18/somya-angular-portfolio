@@ -13,12 +13,15 @@ import { experiences } from '@/utils/data/experience';
   styleUrls: ['./experience.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA] 
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
   experiences = experiences;
   workIcon = faBriefcase;
   lottieFile: any;
 
-  async ngOnInit() {
+selectedIndex: number | null = null;
 
-  }
+toggleExperience(index: number) {
+  this.selectedIndex = this.selectedIndex === index ? null : index;
+}
+
 }

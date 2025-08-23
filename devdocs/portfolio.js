@@ -23,10 +23,16 @@ const greeting = {
   username: "Somya Mahajan",
   title: "Hi all, I am Somya Mahajan",
   subTitle: emoji(
-    "Frontend Developer with 4 years of experience in Angular, TypeScript, RxJS, JavaScript, and REST API integration, building high-performance, scalable single-page applications. Proven track record in improving application performance by 20%+ via code optimization and refactoring. Strong background in component-based architecture, unit testing (Jasmine/Karma), and Agile development. Recently pursued a Master’s in Project Management to transition into technical leadership and product ownership."
+    'Frontend developer with 4 years of experience specializing in Angular, TypeScript, JavaScript (ES6+), RxJS, and',
+'REST API integration to build scalable, high-performance single-page applications. Skilled in component-based',
+'architecture, responsive UI design (HTML5, CSS3, SCSS), and state management. Experienced in Agile/Scrum',
+'environments with a strong focus on code quality through unit testing (Jasmine, Karma) and CI/CD practices.',
+'Leveraging AI-powered tools like GitHub Copilot to accelerate defect resolution, improve unit testing efficiency,',
+'and enhance overall development speed by saving about 3 hours weekly. Proven track record in optimizing',
+'application performance by 30% and delivering intuitive, user-centric experiences.'
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1Vjo5-k-0tt8aY8ZY-JG2IUXX6XaZGOnb/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1E2lkE-016fB066yq_ttQiczCkg1_LE3b/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 

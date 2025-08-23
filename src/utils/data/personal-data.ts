@@ -2,7 +2,23 @@ export const personalData = {
   name: "Somya Mahajan",
   profile: 'assets/profile.jpeg',
   designation: "Software Engineer - FrontEnd Developer",
-  description: "Frontend Developer with 4 years of experience in Angular, TypeScript, RxJS, JavaScript, and REST API integration, building high-performance, scalable single-page applications. Proven track record in improving application performance by 20%+ via code optimization and refactoring. Strong background in component-based architecture, unit testing (Jasmine/Karma), and Agile development. Recently pursued a Master’s in Project Management to transition into technical leadership and product ownership.",
+description: `
+    Frontend developer with <b class="text-pink-400">4 years of experience</b> specializing in 
+    <b class="text-pink-400">Angular</b>, <b class="text-pink-400">TypeScript</b>, 
+    <b class="text-pink-400">JavaScript (ES6+)</b>, <b class="text-pink-400">RxJS</b>, and 
+    <b class="text-pink-400">REST API integration</b> to build scalable, high-performance SPAs.
+    Skilled in <b class="text-pink-400">component-based architecture</b>, 
+    <b class="text-pink-400">responsive UI design</b> (HTML5, CSS3, SCSS), and 
+    <b class="text-pink-400">state management</b>.
+    <br />
+    Experienced in <b class="text-pink-400">Agile/Scrum</b> environments with a strong focus on 
+    <b class="text-pink-400">code quality</b> through 
+    <b class="text-pink-400">unit testing (Jasmine, Karma)</b> and 
+    <b class="text-pink-400">CI/CD practices</b>.
+    <br />
+    Leveraging <b class="text-pink-400">AI-powered tools</b> like GitHub Copilot and <b class="text-pink-400">optimized application performance</b> by 
+    <b class="text-pink-400">30%</b> and delivering intuitive, 
+    <b class="text-pink-400">user-centric experiences</b>.`,
   email: 'somyamahajan18@gmail.com',
   phone: '+917814828738',
   address: 'Hormavu, Bengakuru, Karnataka, India',
@@ -10,5 +26,5 @@ export const personalData = {
   linkedIn: 'https://linkedin.com/in/somya-mahajan-84b66916a',
   leetcode: "https://leetcode.com/u/somya_m/",
   devUsername: "somyamahajan18",
-  resume: "https://drive.google.com/file/d/1Vjo5-k-0tt8aY8ZY-JG2IUXX6XaZGOnb/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1E2lkE-016fB066yq_ttQiczCkg1_LE3b/view?usp=sharing"
 }

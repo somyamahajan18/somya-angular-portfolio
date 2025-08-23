@@ -19,6 +19,13 @@
 
     <div class="py-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+             <div class="flex justify-center items-start">
+                <div class="w-3/4 h-3/4">
+                
+                    <app-animation-lottie [animationPath]="lottieFile"></app-animation-lottie>
+                
+                </div>
+            </div>
             <div>
                 <div class="flex flex-col gap-6">
                     <div *ngFor="let education of educations" class="glow-card"
@@ -44,18 +51,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-         <div class="flex justify-center items-start">
-                <div class="w-3/4 h-3/4">
-                    <app-animation-lottie [animationPath]="lottieFileCode"></app-animation-lottie>
-                    <br>
-                    <br>
-                
-                    <br>
-                
-                    <app-animation-lottie [animationPath]="lottieFile"></app-animation-lottie>
-                
                 </div>
             </div>
           

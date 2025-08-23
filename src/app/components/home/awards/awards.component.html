@@ -1,4 +1,4 @@
-<div id="awards" class="py-12 bg-[#1a1443] text-white">
+<div id="awards" class="py-12  text-white">
   <h2 class="text-3xl font-bold text-center mb-8 text-pink-500">Awards & Certifications</h2>
 
   <swiper-container
@@ -12,7 +12,7 @@
     
     <ng-container *ngFor="let award of awards">
       <swiper-slide>
-        <div class="award-card p-5 rounded-lg bg-[#25213b] flex flex-col items-center gap-4">
+        <div class="award-card p-5 rounded-lg  flex flex-col items-center gap-4">
           <img [src]="award.image" alt="{{award.title}}" class="w-24 h-24 object-contain rounded-full" />
           <div class="text-center">
             <p class="font-semibold text-lg">{{award.title}}</p>

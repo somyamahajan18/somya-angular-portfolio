@@ -20,3 +20,7 @@
 .glow-card:hover::before {
     transform: rotate(180deg);
 }
+
+.my-12 {
+    margin-bottom: 0 !important;
+}
