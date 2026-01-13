@@ -23,7 +23,7 @@ const greeting = {
   username: "Somya Mahajan",
   title: "Hi all, I am Somya Mahajan",
   subTitle: emoji(
-    'Frontend developer with 4 years of experience specializing in Angular, TypeScript, JavaScript (ES6+), RxJS, and',
+    'Senior Software Engineer with 4 years of experience specializing in Angular, TypeScript, JavaScript (ES6+), RxJS, and',
 'REST API integration to build scalable, high-performance single-page applications. Skilled in component-based',
 'architecture, responsive UI design (HTML5, CSS3, SCSS), and state management. Experienced in Agile/Scrum',
 'environments with a strong focus on code quality through unit testing (Jasmine, Karma) and CI/CD practices.',
@@ -32,7 +32,7 @@ const greeting = {
 'application performance by 30% and delivering intuitive, user-centric experiences.'
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1E2lkE-016fB066yq_ttQiczCkg1_LE3b/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1gNvWrTn_ILSybJYrXj6ETjN48vv3LAHM/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -177,10 +177,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer – Frontend Developer",
-      company: "Wabtec Corporation",
+      role: "Senior Software Engineer – Frontend Angular Developer",
+      company: "Netradyne",
       companylogo: require("./assets/images/eeizo.png"),
-      date: "July 2024 – Present",
+      date: "January 2026 – Present",
       desc: "FullStack Web and Mobile Apps Developer",
       descBullets: [
         "WordPress Plugin Development and WordPress Custom Theme Development",

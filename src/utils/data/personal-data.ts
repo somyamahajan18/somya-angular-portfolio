@@ -1,9 +1,9 @@
 export const personalData = {
   name: "Somya Mahajan",
   profile: 'assets/profile.jpeg',
-  designation: "Software Engineer - FrontEnd Developer",
+  designation: "Senior Software Engineer - FrontEnd Angular Developer",
 description: `
-    Frontend developer with <b class="text-pink-400">4 years of experience</b> specializing in 
+    Senior Software Engineer with <b class="text-pink-400">4 years of experience</b> specializing in 
     <b class="text-pink-400">Angular</b>, <b class="text-pink-400">TypeScript</b>, 
     <b class="text-pink-400">JavaScript (ES6+)</b>, <b class="text-pink-400">RxJS</b>, and 
     <b class="text-pink-400">REST API integration</b> to build scalable, high-performance SPAs.
@@ -26,5 +26,5 @@ description: `
   linkedIn: 'https://linkedin.com/in/somya-mahajan-84b66916a',
   leetcode: "https://leetcode.com/u/somya_m/",
   devUsername: "somyamahajan18",
-  resume: "https://drive.google.com/file/d/1E2lkE-016fB066yq_ttQiczCkg1_LE3b/view?usp=sharing"
+  resume: "https://drive.google.com/file/d/1gNvWrTn_ILSybJYrXj6ETjN48vv3LAHM/view?usp=share_link"
 }
